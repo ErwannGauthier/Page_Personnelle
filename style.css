@@ -1,0 +1,780 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+@font-face {
+    font-family: 'Questrial';
+    src: url('static/fonts/Questrial/Questrial-Regular.eot');
+    /* IE9 Compat Modes */
+    src: url('static/fonts/Questrial/Questrial-Regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('static/fonts/Questrial/Questrial-Regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('static/fonts/Questrial/Questrial-Regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('static/fonts/Questrial/Questrial-Regular.svg#svgFontName') format('svg');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('static/fonts/Roboto/Roboto-Regular.eot');
+    /* IE9 Compat Modes */
+    src: url('static/fonts/Roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('static/fonts/Roboto/Roboto-Regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('static/fonts/Roboto/Roboto-Regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('static/fonts/Roboto/Roboto-Regular.svg#svgFontName') format('svg');
+    /* Legacy iOS */
+}
+
+body {
+    font-family: Roboto;
+}
+
+h1,
+h2 {
+    font-family: Questrial;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+h3 {
+    font-family: Questrial;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+header,
+footer {
+    color: #FFFFFF;
+    background-color: #0e0d0d;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px;
+    border-color: #FFFFFF;
+    font-family: Questrial;
+    font-size: large;
+}
+
+h1 {
+    width: 20%;
+    margin-left: 10%
+}
+
+nav {
+    margin-right: 10%;
+}
+
+nav>ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+nav>ul>li {
+    margin-right: 24px;
+}
+
+.link_header {
+    font-weight: bold;
+}
+
+.link_header:any-link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.link_header:hover {
+    color: #7f7f7f;
+}
+
+/* Sidenav menu */
+.sidenav {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -100%;
+    background-color: #0e0d0d;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+    opacity: 95%;
+}
+
+/* Sidenav menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #7f7f7f;
+}
+
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidenav li {
+    padding-top: 24px;
+}
+
+/* Active class */
+.sidenav.active {
+    left: 0;
+    padding-top: 10%;
+    text-align: center;
+}
+
+/* Close btn */
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+/* Icône burger */
+.burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 12px;
+}
+
+#openBtn {
+    display: none;
+    align-items: center;
+    margin-right: 10%;
+}
+
+#openBtn:any-link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#openBtn:hover {
+    color: #7f7f7f;
+}
+
+main {
+    line-height: 1.5;
+}
+
+.bg-gris {
+    background-color: #f8f8f8;
+}
+
+.accueil {
+    color: #FFFFFF;
+    background-color: #0e0d0d;
+    height: 100%;
+    padding: 20% 30%;
+
+    font-family: Questrial;
+    font-size: x-large;
+    font-weight: bolder;
+
+    line-height: 1;
+}
+
+.div-about {
+    padding: 24px 0;
+}
+
+.div-about *>a:any-link {
+    color: #7A7A7A;
+}
+
+.div-about *>a:hover {
+    color: #13aff0;
+}
+
+.div-about>h2 {
+    padding: 24px 0;
+    text-align: center;
+}
+
+.div-about-qui-suis-je {
+    display: flex;
+}
+
+.div-about-qui-suis-je-1 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.div-about-qui-suis-je-1>img {
+    padding-left: 25%;
+}
+
+.div-about-qui-suis-je-2 {
+    width: 50%;
+}
+
+.div-about-qui-suis-je-2>h3 {
+    padding: 8px 0;
+}
+
+.div-about-qui-suis-je-2>p {
+    padding: 8px 18px;
+    padding-right: 25%;
+    color: #7A7A7A;
+}
+
+.div-about-diplomes {
+    display: flex;
+    padding-top: 24px;
+}
+
+.div-about-diplomes-1 {
+    width: 50%;
+}
+
+.div-about-diplomes-1-1 {
+    padding-left: 30%;
+}
+
+.div-about-diplomes-1-1>h3 {
+    padding: 8px 0;
+}
+
+.div-about-diplomes-1-1>p {
+    padding: 8px 16px;
+    color: #7A7A7A;
+}
+
+.div-about-diplomes-2 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.div-about-diplomes-2>img {
+    padding-left: 20%;
+}
+
+.h4-xp-pro{
+    font-family: "Questrial";
+    font-size: 18px;
+}
+
+.div-about-xp-pro {
+    margin: 0 20%;
+    padding-top: 24px;
+}
+
+.div-about-xp-pro>h3 {
+    text-align: center;
+    padding: 8px 0;
+}
+
+.div-about-xp-pro>div {
+    padding: 8px 18px;
+    color: #7A7A7A;
+}
+
+.div-about-xp-pro>div>p {
+    padding: 4px 18px;
+}
+
+.div-about-xp-pro>div>ul {
+    margin-top: 0;
+    margin-left: 24px;
+    margin-right: 10%;
+}
+
+.div-skills {
+    padding: 24px 0;
+}
+
+.div-skills *>a:any-link {
+    color: black;
+    text-decoration: none;
+}
+
+.div-skills *>a:hover {
+    color: #13aff0;
+}
+
+.div-skills>h2 {
+    padding: 24px 0;
+    text-align: center;
+}
+
+.div-skills-1 {
+    display: flex;
+}
+
+.div-skills-1-1 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.div-skills-1-1>img {
+    padding-right: 10%;
+}
+
+.div-skills-1-2 {
+    width: 50%;
+}
+
+.div-skills-1-2 * {
+    margin-right: 40%;
+}
+
+.div-skills-1-2 *>strong {
+    margin-right: 0;
+}
+
+.div-skills-1-2>h3 {
+    padding-bottom: 12px;
+}
+
+.div-skills-1-2>p {
+    padding-left: 24px;
+    margin-top: 2px;
+}
+
+.div-skills-1-2>ul {
+    margin-top: 0;
+    margin-left: 24px;
+    margin-right: 20%;
+}
+
+.div-skills-2 {
+    display: flex;
+    padding: 5% 0;
+}
+
+.div-skills-2-1 {
+    width: 50%;
+}
+
+.div-skills-2-1-1 {
+    padding-left: 50%;
+}
+
+.div-skills-2-1-1>h3 {
+    padding-bottom: 12px;
+}
+
+.div-skills-2-1-1>p {
+    padding-left: 24px;
+    margin-top: 2px;
+}
+
+.div-skills-2-1-1>ul {
+    margin-left: 24px;
+    margin-top: 0;
+    margin-right: 20%;
+}
+
+.div-skills-2-2 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.div-skills-2-2>img {
+    padding-left: 10%;
+}
+
+.div-projects {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0;
+}
+
+.div-projects *>a:any-link {
+    color: black;
+}
+
+.div-projects *>a:hover {
+    color: #13aff0;
+}
+
+.div-projects>h2 {
+    padding: 24px 0;
+    text-align: center;
+}
+
+.div-projects>div {
+    padding: 0 30%;
+    margin: 18px 0;
+}
+
+.div-projects>div * {
+    color: #7f7f7f;
+}
+
+.div-projects>div>h3 {
+    color: black;
+}
+
+.div-projects>div>div {
+    padding-left: 24px;
+}
+
+.div-projects>div>div * {
+    padding-top: 10px;
+}
+
+.div-projects>div>div>h4 {
+    font-weight: bold;
+}
+
+footer {
+    font-family: Questrial;
+    padding: 24px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer *>a:any-link {
+    color: white;
+    text-decoration: none;
+}
+
+footer *>a:hover {
+    color: #13aff0;
+}
+
+footer * {
+    padding: 4px 0;
+}
+
+.scroll-top {
+    color: white;
+    font-size: x-large;
+    background-color: #0e0d0d;
+    text-align: center;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+
+.scroll-top:any-link {
+    text-decoration: none;
+}
+
+.scroll-top:link {
+    opacity: 50%;
+}
+
+.scroll-top:hover {
+    opacity: 100%;
+}
+
+@media screen and (max-width: 980px) {
+
+    header {
+        height: 100px;
+    }
+
+    h1 {
+        text-align: center;
+        width: 100%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #openBtn {
+        display: flex;
+    }
+
+    .div-about-qui-suis-je-1>img {
+        padding-left: 15%;
+        width: 100%
+    }
+
+    .div-about-qui-suis-je-2>p {
+        padding-right: 15%;
+    }
+
+    .div-about-diplomes-1-1 {
+        padding-left: 20%;
+    }
+
+    .div-about-diplomes-2>img {
+        padding-left: 20%;
+    }
+
+    .div-about-xp-pro {
+        margin: 0 20%;
+    }
+
+    .div-skills-1-1>img {
+        padding-right: 20%;
+    }
+
+    .div-skills-1-2 * {
+        margin-right: 20%;
+    }
+
+    .div-skills-1-2>ul {
+        margin-right: 10%;
+    }
+
+    .div-skills-2-1-1 {
+        padding-left: 25%;
+    }
+
+    .div-skills-2-1-1>p {
+        padding-left: 24px;
+        margin-top: 2px;
+    }
+
+    .div-skills-2-1-1>ul {
+        margin-right: 10%;
+    }
+
+    .div-skills-2-2>img {
+        padding-left: 20%;
+    }
+
+    .div-projects>div {
+        padding: 0 20%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    header {
+        height: 80px;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 0 32px;
+        width: 80%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #openBtn {
+        display: flex;
+    }
+
+    .div-about-qui-suis-je {
+        flex-direction: column;
+        margin: 0 10%;
+    }
+
+    .div-about-qui-suis-je-1 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .div-about-qui-suis-je-1>img {
+        width: 75%;
+        padding-left: 0;
+    }
+
+    .div-about-qui-suis-je-2 {
+        width: 100%;
+    }
+
+    .div-about-diplomes {
+        flex-direction: column;
+        padding: 24px 0;
+    }
+
+    .div-about-diplomes-1 {
+        width: 100%;
+        order: 1;
+    }
+
+    .div-about-diplomes-1-1 {
+        padding-left: 10%;
+    }
+
+    .div-about-diplomes-2 {
+        width: 100%;
+        justify-content: center;
+        order: 0;
+        padding-top: 12px;
+    }
+
+    .div-about-diplomes-2>img {
+        padding-left: 0%;
+    }
+
+    .div-about-xp-pro {
+        margin: 0 10%;
+    }
+
+    .div-skills-1 {
+        flex-direction: column;
+        margin: 0 5%
+    }
+
+    .div-skills-1-1 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 24px;
+    }
+
+    .div-skills-1-1>img {
+        padding-right: 0%;
+    }
+
+    .div-skills-1-2 {
+        width: 100%;
+    }
+
+    .div-skills-1-2 * {
+        margin: 0%;
+    }
+
+    .div-skills-1-2>ul {
+        margin-right: 10%;
+    }
+
+    .div-skills-2 {
+        flex-direction: column;
+        padding: 5% 0;
+        margin: 0 5%;
+    }
+
+    .div-skills-2-1 {
+        width: 100%;
+        order: 1;
+    }
+
+    .div-skills-2-1-1 {
+        padding-left: 0%;
+    }
+
+    .div-skills-2-1-1>ul {
+        margin-right: 10%;
+    }
+
+    .div-skills-2-2 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        order: 0;
+        padding-bottom: 24px;
+    }
+
+    .div-skills-2-2>img {
+        padding-left: 0%;
+    }
+
+    .div-projects>div {
+        padding: 0 5%;
+    }
+}
