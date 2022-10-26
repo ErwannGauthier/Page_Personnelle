@@ -20,8 +20,9 @@ skills = {
             "CSS",
             "JavaScript",
             "PHP",
-            "Bootstrap",
             "Django",
+            "J2EE",
+            "Bootstrap",
             "WordPress"
         ],
 
