@@ -53,8 +53,8 @@ for (exp in experiences) {
     }
 
     div.appendChild(h4);
-    div.appendChild(p_mission);
     div.appendChild(p_duree);
+    div.appendChild(p_mission);
     div.appendChild(p_competence);
     div.appendChild(ul_competence);
 

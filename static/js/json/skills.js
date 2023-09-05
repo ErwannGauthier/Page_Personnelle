@@ -2,6 +2,7 @@ skills = {
     "Programmation logiciel": {
         "Langages": [
             "C",
+            "C++",
             "Java & Java FX",
             "Python"
         ],
@@ -21,8 +22,10 @@ skills = {
             "JavaScript",
             "PHP",
             "Django",
+            "Flask",
             "J2EE",
             "Bootstrap",
+            "Tailwind",
             "WordPress"
         ],
 
@@ -31,7 +34,8 @@ skills = {
             "project_page_perso": "Page personnelle V1",
             "project_film_co": "Film & Co",
             "project_bio_et_terre": "Bio & Terre",
-            "project_page_perso_2": "Page personnelle V2"
+            "project_page_perso_2": "Page personnelle V2",
+            "app_spotify": "App Spotify"
         },
 
         "image": "icon_web.png"

@@ -1,4 +1,15 @@
 projects = {
+    "App Spotify": {
+        "id": "app_spotify",
+        "link": "https://github.com/ErwannGauthier/App_Spotify",
+        "annee": 2023,
+        "sous-titre": "Site Web : Flask - API Spotipy - Bootstrap",
+        "description": [
+            "Projet personnel réalisé afin de répondre à un problème que je rencontrais, ce problème était de lister simplement toutes les musiques d'un artiste à un seul endroit.", 
+            "Ce site web permet de lister toutes les musiques d'un artiste, y compris les featurings, afin de les ajouter dans une de vos playlists Spotify, grâce à \"Spotipy\" l'API python de Spotify.",
+            "L'UI du site n'est pas encore terminée."
+        ]
+    },
     "Page personnelle V2": {
         "id": "project_page_perso_2",
         "link": "",
