@@ -20,12 +20,15 @@ skills = {
             "HTML",
             "CSS",
             "JavaScript",
+            "TypeScript",
             "PHP",
+            "NextJS",
+            "React",
             "Django",
             "Flask",
             "J2EE",
             "Bootstrap",
-            "Tailwind",
+            "Tailwind CSS",
             "WordPress"
         ],
 
@@ -35,24 +38,27 @@ skills = {
             "project_film_co": "Film & Co",
             "project_bio_et_terre": "Bio & Terre",
             "project_page_perso_2": "Page personnelle V2",
-            "app_spotify": "App Spotify"
+            "app_spotify": "App Spotify",
+            "site_streaming": "Site Streaming",
         },
 
         "image": "icon_web.png"
     },
 
-    "Base de données": {
+    "Base de données & ORM": {
         "Langages": [
             "PostgreSQL",
             "MySQL",
-            "SQLite"
+            "SQLite",
+            "Prisma ORM"
         ],
 
         "Projets": {
             "project_gestion_commerce": "Application de gestion de stock d’un commerce",
             "project_film_co": "Film & Co",
             "project_agend_app": "Agend'App",
-            "project_bio_et_terre": "Bio & Terre"
+            "project_bio_et_terre": "Bio & Terre",
+            "site_streaming": "Site Streaming",
         },
 
         "image": "icon_database.png"

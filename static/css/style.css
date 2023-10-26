@@ -278,7 +278,7 @@ main {
 }
 
 .div-about *>a:any-link {
-    color: #7A7A7A;
+    color: #5A5A5A;
 }
 
 .div-about *>a:hover {
@@ -315,7 +315,7 @@ main {
 .div-about-qui-suis-je-2>p {
     padding: 8px 18px;
     padding-right: 25%;
-    color: #7A7A7A;
+    color: #5A5A5A;
 }
 
 .div-about-diplomes {
@@ -337,7 +337,7 @@ main {
 
 .div-about-diplomes-1-1>p {
     padding: 8px 16px;
-    color: #7A7A7A;
+    color: #5A5A5A;
 }
 
 .div-about-diplomes-2 {
@@ -367,7 +367,7 @@ main {
 
 .div-about-xp-pro>div {
     padding: 8px 18px;
-    color: #7A7A7A;
+    color: #5A5A5A;
 }
 
 .div-about-xp-pro>div>p {
@@ -504,7 +504,7 @@ main {
 }
 
 .div-projects>div * {
-    color: #7f7f7f;
+    color: #5A5A5A;
 }
 
 .div-projects>div>h3 {
