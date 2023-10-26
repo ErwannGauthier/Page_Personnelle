@@ -3,10 +3,10 @@ projects = {
         "id": "site_streaming",
         "link": "https://github.com/ErwannGauthier/Project_Streaming/",
         "annee": 2023,
-        "sous-titre": "Site Web : NextJS - React - Tailwind CSS - Prisma - API TMDB",
+        "sous-titre": "Site Web : NextJS - React - TypeScript - Prisma - API TMDB - Tailwind CSS",
         "description": [
             "Projet personnel réalisé afin de pouvoir diffuser sur n'importe quels appareils en local, des films ou des séries qui étaient jusque-là stockés sur un disque dur.", 
-            "Ce site web est réalisé avec NextJS, React et l'ORM Prisma afin de découvrir le fonctionnement des dernières technos du moment, il utilise également l'API de TheMovieDB afin de récupérer les informations sur les films et séries.",
+            "Ce site web est réalisé avec NextJS, React, TypeScript et l'ORM Prisma afin de découvrir le fonctionnement des dernières technos du moment, il utilise également l'API de TheMovieDB afin de récupérer les informations sur les films et séries.",
             "Le site est fonctionnel, mais son développement n'est pour le moment pas terminé."
         ]
     },
